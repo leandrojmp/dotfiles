@@ -1,0 +1,8 @@
+// vscode user settings
+{
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "default",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "python.linting.pylintEnabled": false
+}
