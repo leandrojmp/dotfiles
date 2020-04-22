@@ -14,12 +14,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'arcticicestudio/nord-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 let g:airline_powerline_fonts = 1
-let g:airline_theme='light'
+ "let g:airline_theme='light'
 " syntax highlight
 syntax on
+colorscheme dracula
+" colorscheme nord
 " tabs & indent
 set tabstop=4
 set shiftwidth=4
