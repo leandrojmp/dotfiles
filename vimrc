@@ -15,7 +15,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-Plugin 'arcticicestudio/nord-vim'
+" Plugin 'arcticicestudio/nord-vim'
+Plugin 'preservim/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 let g:airline_powerline_fonts = 1
@@ -29,3 +30,4 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+map <C-n> :NERDTreeToggle<CR>
