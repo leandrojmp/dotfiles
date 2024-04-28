@@ -1,0 +1,60 @@
+# starship configuration
+
+add_newline = false
+
+format = """
+$os\
+[ ▮ ](white)\
+$username\
+[ ▮ ](white)\
+$hostname\
+[ ▮ ](white)\
+$directory\
+$git_branch\
+$line_break\
+$character
+"""
+
+[character]
+disabled = false
+success_symbol = '[▰](bold white)'
+error_symbol = '[▰](bold red)'
+
+[directory]
+truncation_length = 3
+truncation_symbol = '+/'
+style = 'bold blue'
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+[username]
+style_user = 'green bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '[$hostname]($style)'
+style = 'bold cyan'
+trim_at = '.'
+disabled = false
+
+[git_branch]
+format = 'on [$symbol$branch(:$remote_branch)]($style)'
+symbol = " "
+style = 'bold yellow'
+truncation_length = 4
+truncation_symbol = ''
+
+[os]
+format = "[$symbol]($style)"
+style = "bold blue"
+disabled = false
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+Macos = "󰀵"
+Linux = "󰌽"
+Pop = "󰌽"
