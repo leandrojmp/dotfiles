@@ -4,14 +4,13 @@ add_newline = false
 
 format = """
 $os\
-[ ▮ ](white)\
+[▮ ](white)\
 $username\
-[ ▮ ](white)\
+[▮ ](white)\
 $hostname\
-[ ▮ ](white)\
+[▮ ](white)\
 $directory\
 $git_branch\
-$git_metrics\
 $golang\
 $python\
 $rust\
@@ -26,7 +25,7 @@ success_symbol = '[▰](bold white)'
 error_symbol = '[▰](bold red)'
 
 [directory]
-truncation_length = 3
+truncation_length = 2
 truncation_symbol = '+/'
 style = 'bold blue'
 format = '[$path]($style)[$read_only]($read_only_style) '
@@ -34,30 +33,25 @@ format = '[$path]($style)[$read_only]($read_only_style) '
 [username]
 style_user = 'green bold'
 style_root = 'red bold'
-format = '[$user]($style)'
+format = '[$user]($style) '
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-format = '[$hostname]($style)'
+format = '[$hostname]($style) '
 style = 'bold cyan'
 trim_at = '.'
 disabled = false
 
 [git_branch]
-format = '[▮ ](white)[$symbol$branch(:$remote_branch)]($style)'
+format = '[▮ ](white)[$symbol$branch(:$remote_branch)]($style) '
 symbol = " "
 style = 'bold yellow'
-truncation_length = 4
 truncation_symbol = ''
 
-[git_metrics]
-format = ' ([+$added]($added_style) )([-$deleted]($deleted_style))'
-disabled = false
-
 [os]
-format = "[$symbol]($style)"
+format = "[$symbol]($style) "
 style = "bold blue"
 disabled = false
 
@@ -71,22 +65,22 @@ Pop = "󰌽"
 # programming languages
 
 [golang]
-format = '[ ▮ ][$symbol($version )]($style)'
+format = '[▮ ][$symbol($version )]($style) '
 style = 'bold red'
 symbol = " "
 
 [python]
-format = '[ ▮ ](white)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = '[▮ ](white)[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style) '
 style = 'bold red'
 symbol = " "
 
 [ruby]
-format = '[ ▮ ](white)[$symbol($version )]($style)'
+format = '[▮ ](white)[$symbol($version )]($style) '
 style = 'bold red'
 symbol = " "
 
 [rust]
-format = '[ ▮ ](white)[$symbol($version )]($style)'
+format = '[▮ ](white)[$symbol($version )]($style) '
 style = 'bold red'
 symbol = " "
 
