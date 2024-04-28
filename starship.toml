@@ -53,7 +53,7 @@ truncation_length = 4
 truncation_symbol = ''
 
 [git_metrics]
-format = ' ([+$added]($added_style) )([-$deleted]($deleted_style) )'
+format = ' ([+$added]($added_style) )([-$deleted]($deleted_style))'
 disabled = false
 
 [os]
